@@ -13,7 +13,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_golPerBlock",
+        "name": "_GolPerBlock",
         "type": "uint256"
       },
       {
