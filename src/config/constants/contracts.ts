@@ -2,7 +2,7 @@ export default {
   masterChef: {
     // primer masterchef con el 10% de fee al devadrr 
     // 97: '0xCeB88Ae94E4920A3FD6eB6bb7F0F8a8e00704804',
-    97: '0x5a98F996Baf4b07Bd8e1E7713058C8d7EdF19e3a', //Masterchef con el 13.33% de fee
+    97: '0x5a98F996Baf4b07Bd8e1E7713058C8d7EdF19e3a', // Masterchef con el 13.33% de fee
     56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
   },
   sousChef: {
@@ -14,7 +14,7 @@ export default {
     56: '0x5aF6D33DE2ccEC94efb1bDF8f92Bd58085432d2c',
   },
   multiCall: {
-    56: '0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B', //Original multicall pancake
+    56: '0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B', // Original multicall pancake
     97: '0x476dceF5698440beb28A175871fBD3143a3d45FD',
   },
   pancakeProfile: {
