@@ -9,7 +9,7 @@ const pools: SerializedPoolConfig[] = [
     stakingToken: serializedTokens.golv2,
     earningToken: serializedTokens.golv2,
     contractAddress: {
-      97: '0xCeB88Ae94E4920A3FD6eB6bb7F0F8a8e00704804',// address mastergol
+      97: '0x5a98F996Baf4b07Bd8e1E7713058C8d7EdF19e3a',// address mastergol13.33
       56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
     },
     poolCategory: PoolCategory.CORE,
