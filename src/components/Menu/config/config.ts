@@ -1,4 +1,4 @@
-import { MenuItemsType, DropdownMenuItemType } from '@pancakeswap/uikit'
+import { MenuItemsType, DropdownMenuItemType } from 'gol-uikit'
 import { ContextApi } from 'contexts/Localization/types'
 // import { nftsBaseUrl } from 'views/Nft/market/constants'
 
@@ -72,14 +72,14 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   // },
   {
     label: '',
-    href: '/info',
+    href: '',
     icon: 'More',
     hideSubNav: true,
     items: [
-      {
-        label: t('Info'),
-        href: '/info',
-      },
+      // {
+      //   label: t('Info'),
+      //   href: '/info',
+      // },
       // {
       //   label: t('IFO'),
       //   href: '/ifo',
@@ -88,16 +88,16 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       //   label: t('Voting'),
       //   href: '/voting',
       // },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
+      // {
+      //   type: DropdownMenuItemType.DIVIDER,
+      // },
       // {
       //   label: t('Leaderboard'),
       //   href: '/teams',
       // },
-      {
-        type: DropdownMenuItemType.DIVIDER,
-      },
+      // {
+      //   type: DropdownMenuItemType.DIVIDER,
+      // },
       {
         label: t('Blog'),
         href: 'https://medium.com/@gol.finance',

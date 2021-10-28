@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex } from '@pancakeswap/uikit'
+import { Flex } from 'gol-uikit'
 import PageSection from 'components/PageSection'
 import { useWeb3React } from '@web3-react/core'
 import useTheme from 'hooks/useTheme'
@@ -8,7 +8,7 @@ import Container from 'components/Layout/Container'
 import { PageMeta } from 'components/Layout/Page'
 import Hero from './components/Hero'
 import { swapSectionData, earnSectionData, cakeSectionData } from './components/SalesSection/data'
-import MetricsSection from './components/MetricsSection'
+// import MetricsSection from './components/MetricsSection'
 import SalesSection from './components/SalesSection'
 import WinSection from './components/WinSection'
 import FarmsPoolsRow from './components/FarmsPoolsRow'
@@ -16,7 +16,7 @@ import Footer from './components/Footer'
 import CakeDataRow from './components/CakeDataRow'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
-import PancakeSquadBanner from './components/Banners/PancakeSquadBanner'
+// import PancakeSquadBanner from './components/Banners/PancakeSquadBanner'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
@@ -55,8 +55,8 @@ const Home: React.FC = () => {
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
           theme.isDark
-            ? 'radial-gradient(103.12% 50% at 50% 50%, #21193A 0%, #191326 100%)'
-            : 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)'
+            ? 'radial-gradient(103.12% 50% at 50% 50%, #ffb900 0%, #737373 100%)'
+            : 'linear-gradient(139.73deg, #737373 0%, #F3EFFF 100%)'
         }
         index={2}
         hasCurvedDivider={false}
@@ -66,54 +66,54 @@ const Home: React.FC = () => {
             <UserBanner />
           </UserBannerWrapper>
         )}
-        <Flex
+        {/* <Flex
           pt={[account ? '220px' : '0', null, null, account ? '76px' : '0']}
           mt={[account ? '0' : '-16px', null, null, account ? '0' : '-48px']}
           pb="24px"
         >
           <PancakeSquadBanner />
-        </Flex>
-        <Hero />
+        </Flex> */}
+        {/* <Hero /> */}
       </StyledHeroSection>
       <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
           theme.isDark
-            ? 'linear-gradient(180deg, #09070C 22%, #201335 100%)'
-            : 'linear-gradient(180deg, #FFFFFF 22%, #D7CAEC 100%)'
+            ? 'linear-gradient(180deg, #09070C 22%, #36319b 100%)'
+            : 'linear-gradient(180deg, #FFFFFF 22%, #b0b0b0 100%)'
         }
         index={2}
         hasCurvedDivider={false}
       >
-        <MetricsSection />
-      </PageSection>
+        {/* <MetricsSection /> */}
+      {/* </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
-      >
-        <OuterWedgeWrapper>
+      > */}
+        {/* <OuterWedgeWrapper>
           <InnerWedgeWrapper top fill={theme.isDark ? '#201335' : '#D8CBED'}>
             <WedgeTopLeft />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
-        <SalesSection {...swapSectionData} />
-      </PageSection>
+        </OuterWedgeWrapper> */}
+        {/* <SalesSection {...swapSectionData} /> */}
+      {/* </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradients.cardHeader}
         index={2}
         hasCurvedDivider={false}
-      >
-        <OuterWedgeWrapper>
+      > */}
+        {/* <OuterWedgeWrapper>
           <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
             <WedgeTopRight />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
-        <SalesSection {...earnSectionData} />
-        <FarmsPoolsRow />
-      </PageSection>
+        </OuterWedgeWrapper> */}
+        {/* <SalesSection {...earnSectionData} /> */}
+        {/* <FarmsPoolsRow /> */}
+      {/* </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={
@@ -123,21 +123,21 @@ const Home: React.FC = () => {
         }
         index={2}
         hasCurvedDivider={false}
-      >
-        <WinSection />
-      </PageSection>
+      > */}
+        {/* <WinSection /> */}
+      {/* </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         index={2}
         hasCurvedDivider={false}
-      >
-        <SalesSection {...cakeSectionData} />
+      > */}
+        {/* <SalesSection {...cakeSectionData} /> */}
         <CakeDataRow />
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"
+        background="linear-gradient(180deg, #f1eeee 0%, #6f6767 100%)"
         index={2}
         hasCurvedDivider={false}
       >

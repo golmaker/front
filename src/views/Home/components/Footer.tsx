@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Heading, Text, Link } from '@pancakeswap/uikit'
+import { Flex, Heading, Text, Link } from 'gol-uikit'
 import { useTranslation } from 'contexts/Localization'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import Container from 'components/Layout/Container'
@@ -67,17 +67,17 @@ const topLeftImage = {
   path: '/images/home/flying-pancakes/',
   attributes: [
     { src: '1-bottom', alt: 'Gol flying on the bottom' },
-    { src: '1-left', alt: 'Gol flying on the left' },
-    { src: '1-top', alt: 'Gol flying on the top' },
+    // { src: '1-left', alt: 'Gol flying on the left' },
+    // { src: '1-top', alt: 'Gol flying on the top' },
   ],
 }
 
 const bottomRightImage = {
   path: '/images/home/flying-pancakes/',
   attributes: [
-    { src: '2-bottom', alt: 'Gol flying on the bottom' },
-    { src: '2-top', alt: 'Gol flying on the top' },
-    { src: '2-right', alt: 'Gol flying on the right' },
+    { src: '1-bottom', alt: 'Gol flying on the bottom' },
+    // { src: '1-top', alt: 'Gol flying on the top' },
+    // { src: '2-right', alt: 'Gol flying on the right' },
   ],
 }
 
@@ -101,17 +101,17 @@ const Footer = () => {
         </BottomRightImgWrapper>
       </FloatingPancakesWrapper>
       <Wrapper>
-        <Heading mb="24px" scale="xl" color="white">
-          {t('Start in seconds.')}
+        <Heading mb="24px" scale="xl" color="#36319b">
+          {t('Welcome to GOL Finance')}
         </Heading>
-        <Text textAlign="center" color="white">
+        <Text textAlign="center" color="#36319b">
           {t('Connect your crypto wallet to start using the app in seconds.')}
         </Text>
-        <Text mb="24px" bold color="white">
+        <Text mb="24px" bold color="#36319b">
           {t('No registration needed.')}
         </Text>
 
-        <Link external href="https://golfinance.gitbook.io/">
+        <Link external href="https://golfinance.gitbook.io/" color="#36319b">
           {t('Learn how to start')}
         </Link>
         {!account && <ConnectWalletButton mt="24px" />}
